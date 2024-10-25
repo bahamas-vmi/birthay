@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 21st Birthday!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="fireworks-background">
+        <div class="birthday-content">
+          <h1>Happy 21st Birthday!</h1>
+          <img src="cake.png" alt="Cake" class="cake-image">
+          <div class="button-container">
+            <a href="#" class="button wine-button" onclick="openWineModal()">
+              <img src="wine.png" alt="Wine Bottle Icon" />
+            </a>
+            <a href="#" class="button map-button" onclick="openMapModal()">
+              <img src="map.png" alt="World Map Icon" />
+            </a>
+          </div>
+          <button class="button surprise-button" onclick="openSurpriseModal()">Surprise</button>
+        </div>
+      </div>
+
+  <!-- Modal Prozor Vino -->
+    <div id="wineModal" class="modal">
+        <div class="modal-content">
+         <span class="close" onclick="closeWineModal()">&times;</span>
+         <h2>Srećan ti 21. rođendan</h2>
+         <p>Isidora, čestitam ti na 21-oj i zvaničnom članstvu u svetu ljubitelja alkohola! 💃 Tvoj set za vino te čeka da uvežbaš otvaranje kao pravi neuro-stručnjak—analitički, uz dozu radoznalosti i preciznosti. Sledeći put kad se vidimo, idemo zajedno u barove, klubove, i na koktele! Ali pazite, vežbaj bez preterivanja da se ne zagrcneš kao ja na Bahamima. 😉 Sve što poželiš je tvoje, nazdravlje!</p>
+        <img src="isidora1.png" alt="isidora" class="modal-image">
+        </div>
+    </div>
+
+    <!-- Modal Prozor Mapa -->
+    <div id="mapModal" class="modal">
+        <div class="modal-content">
+         <span class="close" onclick="closeMapModal()">&times;</span>
+         <h2>Srećan ti 21. rođendan</h2>
+         <p>Samo sam hteo da ti pišem kako si mi važna. Naša avantura, od Chicaga do Majamija, zaista nas je zblizila i uvek ću pamtiti te trenutke. Nedostaješ mi i jedva čekam da ponovo budemo zajedno, bilo da istražujemo Tokio ili se opuštamo na Tahitiju! 💞 Ova mapa koju ti šaljem je podsetnik na sve avanture koje nas čekaju. Nadam se da ćemo uskoro izgrebati celu mapu! 🌍💖</p>
+        <img src="zaj.png" alt="piza" class="modal-image">
+        </div>
+    </div>
+
+  <!-- Modal Prozor za Specijalno Iznenađenje -->
+  <div id="surpriseModal" class="modal">
+    <div class="modal-content-large">
+      <span class="close" onclick="closeSurpriseModal()">&times;</span>
+      <h2>Surprise</h2>
+      <video src="video.mp4" controls class="modal-video"></video>
+      <div class="image-container">
+        <img src="zajedno1.png" alt="Surprise Image 1" class="modal-image">
+        <img src="zajedno2.png" alt="Surprise Image 2" class="modal-image">
+      </div>
+      <p>Hvala vam što delimo ove posebne trenutke zajedno. Ovaj video i slike su samo mali podsetnik na sve avanture koje nas čekaju!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

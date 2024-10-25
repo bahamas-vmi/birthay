@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #282c34;
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  .fireworks-background {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+  }
+  
+.birthday-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Razmak između dugmića */
+    margin-top: 20px;
+  }
+  
+  .cake-image {
+    width: 200px;
+    margin: 20px 0;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #FFC0CB;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .button {
+    background-color: #282c34;
+    padding: 15px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .button img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+  }
+  
+/* Ostale osnovne stilove zadržavamo */
+
+.firework {
+    position: absolute;
+    width: 8px; 
+    height: 8px;
+    background-color: #FF5733; /* Početna boja vatrometa */
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: explode 1.2s ease-out forwards, fadeOut 1.5s ease-out forwards;
+  }
+  
+  @keyframes explode {
+    0% { transform: scale(1); }
+    40% { transform: scale(1.5); opacity: 1; }
+    100% {
+      transform: scale(3);
+      opacity: 0;
+      background-color: #FFD700; /* Završna boja za efekat */
+    }
+  }
+  
+  @keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+/* Stilovi za modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #FFC0CB;
+    color: black; /* Postavlja boju teksta na crnu */
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    max-height: 80vh; /* Ograničava visinu modala */
+    overflow-y: auto; /* Omogućava skrolovanje unutar modala */
+    text-align: center;
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .modal-image {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+  }
+  /* Stilovi za modal za specijalno iznenađenje */
+.modal-content-large {
+    background-color: #FFC0CB;
+    color: black;
+    margin: 3% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh; /* Veći modal */
+    overflow-y: auto;
+    text-align: center;
+    position: relative;
+  }
+  
+  .modal-video {
+    max-width: 500px; /* Postavi maksimalnu širinu videa */
+    width: 100%; /* Širina će se prilagoditi veličini modala */
+    height: auto; /* Visina se automatski prilagođava */
+    border-radius: 8px; /* Dodaje zaobljene ivice */
+    margin-top: 15px; /* Razmak iznad videa */
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .modal-image {
+    width: 45%;
+    height: auto;
+    border-radius: 8px;
+  }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 21st Birthday!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="fireworks-background">
+        <div class="birthday-content">
+          <h1>Happy 21st Birthday!</h1>
+          <img src="cake.png" alt="Cake" class="cake-image">
+          <div class="button-container">
+            <a href="#" class="button wine-button" onclick="openWineModal()">
+              <img src="wine.png" alt="Wine Bottle Icon" />
+            </a>
+            <a href="#" class="button map-button" onclick="openMapModal()">
+              <img src="map.png" alt="World Map Icon" />
+            </a>
+          </div>
+          <button class="button surprise-button" onclick="openSurpriseModal()">Surprise</button>
+        </div>
+      </div>
+
+  <!-- Modal Prozor Vino -->
+    <div id="wineModal" class="modal">
+        <div class="modal-content">
+         <span class="close" onclick="closeWineModal()">&times;</span>
+         <h2>Srećan ti 21. rođendan</h2>
+         <p>Mina, sada zvanično možeš da uzmeš 21+ narukvicu bez provlačenja! 🎉 Čestitam ti na ulasku u svet odraslih, gde vino, kokteli, festivali i dobra muzika idu ruku pod ruku. Set za vino je tu da vežbaš svoje degustatorske sposobnosti, tako da sledeći put zajedno nazdravljamo na nekom festivalu. Cheers za tebe i tvoju muziku koja će osvojiti svet! 🎶 Želim ti sve najbolje, jer samo to i zaslužuješ</p>
+        <img src="mina1.png" alt="mina" class="modal-image">
+        </div>
+    </div>
+
+    <!-- Modal Prozor Mapa -->
+    <div id="mapModal" class="modal">
+        <div class="modal-content">
+         <span class="close" onclick="closeMapModal()">&times;</span>
+         <h2>Srećan ti 21. rođendan</h2>
+         <p>Samo želim da ti kažem koliko mi puno značiš. Naša putovanja su bila nezaboravna, od Chicago do Bahama, i svaki trenutak sa tobom je bio poseban. Mnogo mi nedostaješ i jedva čekam da se ponovo okupimo i kreiramo nove uspomene, bilo u Tokiju ili možda Tahiti! 💖 Ova mapa koju dobijaš treba da obeležava sva naša putovanja, i nadam se da ćemo uskoro izgrebati celu! 🎶</p>
+        <img src="zaj.png" alt="piza" class="modal-image">
+        </div>
+    </div>
+
+  <!-- Modal Prozor za Specijalno Iznenađenje -->
+  <div id="surpriseModal" class="modal">
+    <div class="modal-content-large">
+      <span class="close" onclick="closeSurpriseModal()">&times;</span>
+      <h2>Surprise</h2>
+      <video src="video.mp4" controls class="modal-video"></video>
+      <div class="image-container">
+        <img src="zajedno1.png" alt="Surprise Image 1" class="modal-image">
+        <img src="zajedno2.png" alt="Surprise Image 2" class="modal-image">
+      </div>
+      <p>Hvala vam što delimo ove posebne trenutke zajedno. Ovaj video i slike su samo mali podsetnik na sve avanture koje nas čekaju!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
